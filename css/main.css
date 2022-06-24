@@ -21,13 +21,19 @@ header nav .settings {
   right: 0;
   text-align: right;
 }
-header nav .settings .colors {
+header nav .settings .items {
   display: flex;
   gap: 5px;
   margin-top: 10px;
+}
+header nav .settings .colors {
+  background: white;
   box-shadow: 0 0 1px black;
-  padding: 0.5rem;
   display: none;
+  padding: 0.5rem;
+  margin-top: 5px;
+  text-align: left;
+  color: black;
 }
 header nav .settings .colors .color {
   width: 2rem;
@@ -140,14 +146,27 @@ section .create:hover {
   inset: 0;
   clip-path: circle(0% at top right);
   transition: all 500ms ease;
+  padding: 1rem;
+  z-index: 9;
 }
 .style .make-note nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: black;
-  padding: 1rem;
-  background: #EEE;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 5px;
+}
+.style .make-note input {
+  margin-top: 10px;
+}
+.style .make-note .add {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  margin: 0;
+  background: black;
+  color: white;
 }
 .style .display {
   clip-path: circle(100%);

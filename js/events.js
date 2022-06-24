@@ -85,8 +85,8 @@ body.addEventListener('click', e => {
     if (target.className == 'fas fa-gear') {
         const colors = document.querySelector('.colors')
         
-        if (colors.style.display != 'flex') {
-            colors.style.display = 'flex'
+        if (colors.style.display != 'block') {
+            colors.style.display = 'block'
         } else {
             colors.style.display = 'none'
         }

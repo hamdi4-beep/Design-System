@@ -22,13 +22,20 @@ header {
             right: 0;
             text-align: right;
 
-            .colors {
+            .items {
                 display: flex;
                 gap: 5px;
                 margin-top: 10px;
+            }
+
+            .colors {
+                background: white;
                 box-shadow: 0 0 1px black;
-                padding: .5rem;
                 display: none;
+                padding: .5rem;
+                margin-top: 5px;
+                text-align: left;
+                color: black;
     
                 .color {
                     width: 2rem;

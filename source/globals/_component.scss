@@ -11,14 +11,29 @@
         inset: 0;
         clip-path: circle(0% at top right);
         transition: all 500ms ease;
+        padding: 1rem;
+        z-index: 9;
 
         nav {    
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: black;
-            padding: 1rem;
-            background: #EEE;
+            border-bottom: 1px solid #DDD;
+            padding-bottom: 5px;
+        }
+
+        input {
+            margin-top: 10px;
+        }
+
+        .add {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            margin: 0;
+            background: black;
+            color: white;
         }
     }
 
