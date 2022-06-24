@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/events.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Design System</h1>
+
+        <nav>
+            <div class="right">
+                <div class="icon">
+                    <img src="./assets/profile.JPG" alt="">
+                </div>
+
+                <div class="profile-info">
+                    <p id="author">Hamdi Kamel</p>
+                    <span>0 Notes</span>
+                </div>
+            </div>
+            
+            <div class="settings">
+                <i class="fas fa-gear"></i>
+
+                <div class="colors">
+                    <div class="color one"></div>
+                    <div class="color two"></div>
+                    <div class="color three"></div>
+                    <div class="color four"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="line"></div>
+
+        <nav>
+            <h2 class="title">Styles Guide</h2>
+            <button class="create cta">Add Component</button>
+        </nav>
+
+        <div class="section styles">
+            <div class="buttons style">
+                <div class="make-note">
+                    <nav>
+                        <p>Create Note</p>
+                        <i class="fas fa-close" id="close"></i>
+                    </nav>
+                </div>
+
+                <div class="header">
+                    <h3>Button Style</h3>
+                    <i class="fas fa-pen"></i>
+                </div>
+    
+                <div class="desc">
+                    <p><p>A set of different buttons that our user will interact with.</p></p>
+                </div>
+    
+                <div class="elements">
+                    <button class="button default">Button</button>
+                    <button class="button rounded">Rounded</button>
+                </div>
+            </div>
+    
+            <div class="inputs style">
+                <div class="header">
+                    <h3>Input Style</h3>
+                    <i class="fas fa-pen"></i>
+                </div>
+    
+                <div class="desc">
+                    <p>An input field that accepts user input upon validation and authentication.</p>
+                </div>
+    
+                <div class="elements">
+                    <input type="text" placeholder="Aa">
+                </div>
+            </div>
+    
+            <div class="checkboxes style">
+                <div class="header">
+                    <h3>Checkbox Style</h3>
+                    <i class="fas fa-pen"></i>
+                </div>
+    
+                <div class="desc">
+                    <p>A custom made checkbox that marks the option the user has checked</p>
+                </div>
+    
+                <div class="elements">
+                    <div role="checkbox" id="checkbox" onclick="this.classList.toggle('checked')"></div>
+                </div>
+            </div>
+
+            <div class="select-menus style">
+                <div class="header">
+                    <h3>Select Style</h3>
+                    <i class="fas fa-pen"></i>
+                </div>
+
+                <div class="desc">
+                    <p>A dropdown menu that lets the user select different options</p>
+                </div>
+
+                <div class="elements">
+                    <ul>
+                        <li>
+                            <i class="fas fa-angle-down"></i>
+                            JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>NodeJS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <nav>
+            <h2>Assets Guide</h2>
+
+            <div class="input-field">   
+                <input type="text" id="upload" placeholder="Upload via URL">
+                <i class="fas fa-upload"></i>
+            </div>
+        </nav>
+
+        <div class="section styles">
+            <div class="images style">
+                <div class="header">
+                    <h3>Image Assets</h3>
+                    <i class="fas fa-pen"></i>
+                </div>
+
+                <div class="desc">
+                    <p>A list of images to be used for this project</p>
+                </div>
+
+                <div class="elements img-container">
+                    <div class="img-wrapper">
+                        <img src="./assets/asset.jpg" alt="">
+                    </div>
+
+                    <div class="img-wrapper">
+                        <img src="./assets/akira.jpg" alt="">
+                    </div>
+
+                    <div class="img-wrapper">
+                        <img src="./assets/ryuji.jpg" alt="">
+                    </div>
+
+                    <div class="img-wrapper">
+                        <img src="./assets/bg.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos style">
+                <div class="header">
+                    <h3>Video Assets</h3>
+                    <i class="fas fa-pen"></i>
+                </div>
+
+                <div class="desc">
+                    <p>A list of videos to be used for this project</p>
+                </div>
+
+                <div class="elements video-container">
+                    <div class="video-wrapper">
+                        <video src="./assets/wallpaper.mp4" loop></video>
+                        
+                        <div class="details">
+                            <i class="fas fa-play"></i>
+                            <span>00:00</span>
+                        </div>
+                    </div>
+
+                    <div class="video-wrapper">
+                        <video src="./assets/video.mp4"></video>
+                        
+                        <div class="details">
+                            <i class="fas fa-play"></i>
+                            <span>00:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made By <span id="author">Hamdi Kamel</span></p>
+
+        <div class="social-links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </footer>
+</body>
+</html>

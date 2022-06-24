@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    padding-block: 1rem;
+    margin-top: 3rem;
+    align-items: center;
+
+    .social-links {
+        font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: -1rem;
+        letter-spacing: 1rem;
+    }
+}

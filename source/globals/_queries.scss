@@ -1,0 +1,39 @@
+@media only screen and (max-width: 786px) {
+    header nav {
+
+        .right {
+            display: none;
+        }
+
+        #time {
+            display: none;
+        }
+
+        .settings {
+            position: static;
+            padding-left: 2rem;
+
+            .colors {
+                display: flex !important;
+                box-shadow: none !important;
+            }
+    
+            .fas {
+                display: none;
+            }
+        }
+    }
+
+    section {
+        border: none;
+
+        .line {
+            display: none;
+        }
+    }
+
+    footer {
+        padding-inline: 3rem;
+        padding-bottom: 0;
+    }
+}

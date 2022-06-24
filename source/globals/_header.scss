@@ -1,0 +1,76 @@
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-inline: 0;
+    padding-bottom: 0;
+    margin-bottom: 3rem;
+    position: relative;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+
+        .author {
+            font-weight: bolder;
+        }
+
+        .settings {
+            position: absolute;
+            right: 0;
+            text-align: right;
+
+            .colors {
+                display: flex;
+                gap: 5px;
+                margin-top: 10px;
+                box-shadow: 0 0 1px black;
+                padding: .5rem;
+                display: none;
+    
+                .color {
+                    width: 2rem;
+                    height: 2rem;
+                    cursor: pointer;
+                    border-radius: 50%;
+                }
+    
+                .one {
+                    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+                }
+    
+                .two {
+                    background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
+                }
+    
+                .three {
+                    background-image: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+                }
+    
+                .four {
+                    background-image: linear-gradient( 135deg, #FFF886 10%, #F072B6 100%);
+                }
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .right {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+}

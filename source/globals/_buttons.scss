@@ -1,0 +1,44 @@
+button {
+    font: inherit;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: .5rem 1.8rem;
+    cursor: pointer;
+
+    &:hover {
+        
+        color: white;
+        border-color: transparent;
+    }
+}
+
+.buttons {
+
+    button {
+        background-color: #FEB692;
+        margin-bottom: 5px;
+
+        &:hover {
+            background: #EA5455;
+        }
+
+        &.default {
+            background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+            background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+            transition: all 500ms ease;
+            margin-right: 5px;
+            color: white;
+
+            &:hover {
+                background-image: linear-gradient(-20deg, #b721ff 50%, #21d4fd 100%);
+            }
+        }
+
+        &.rounded {
+            background-color: #EA5455;
+            border-radius: 20px;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+input {
+    font: inherit;
+    padding: .5rem 1rem;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    background: white;
+    width: 100%;
+
+    &:focus {
+        border-color: #777;
+    }
+}

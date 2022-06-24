@@ -1,0 +1,422 @@
+header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-inline: 0;
+  padding-bottom: 0;
+  margin-bottom: 3rem;
+  position: relative;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+header nav .author {
+  font-weight: bolder;
+}
+header nav .settings {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+header nav .settings .colors {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  box-shadow: 0 0 1px black;
+  padding: 0.5rem;
+  display: none;
+}
+header nav .settings .colors .color {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+header nav .settings .colors .one {
+  background-image: linear-gradient(135deg, #ABDCFF 10%, #0396FF 100%);
+}
+header nav .settings .colors .two {
+  background-image: linear-gradient(135deg, #FFF3B0 10%, #CA26FF 100%);
+}
+header nav .settings .colors .three {
+  background-image: linear-gradient(135deg, #FFE985 10%, #FA742B 100%);
+}
+header nav .settings .colors .four {
+  background-image: linear-gradient(135deg, #FFF886 10%, #F072B6 100%);
+}
+header h1 {
+  text-align: center;
+}
+header .right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .right .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+section {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 3rem;
+  padding-top: 0;
+  border-left: 1px solid #DDD;
+  position: relative;
+}
+section:last-of-type {
+  padding-bottom: 0;
+}
+section .line {
+  background: black;
+  width: 1px;
+  height: 50%;
+  position: absolute;
+  left: -1px;
+  z-index: 9;
+}
+section nav {
+  display: flex;
+  align-items: flex-end;
+  text-align: initial;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  font-size: large;
+}
+section nav .input-field {
+  position: relative;
+}
+section nav .input-field input {
+  width: initial;
+  border-radius: 50px;
+  padding-right: 2.4rem;
+}
+section nav .input-field .fas {
+  position: absolute;
+  right: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+section .section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  text-align: left;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+  padding-top: 2rem;
+  transition: background-image 500ms ease;
+}
+section .section:not(:last-child) {
+  margin-bottom: 2rem;
+}
+section .create {
+  display: block;
+  margin-left: auto;
+  background: black;
+  color: white;
+  border: none;
+  width: initial;
+}
+section .create:hover {
+  border-color: none;
+}
+
+.style {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-inline: 3rem;
+  border-bottom: 1px solid #F2F2;
+  position: relative;
+}
+.style .make-note {
+  background: white;
+  position: absolute;
+  inset: 0;
+  clip-path: circle(0% at top right);
+  transition: all 500ms ease;
+}
+.style .make-note nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 1rem;
+  background: #EEE;
+}
+.style .display {
+  clip-path: circle(100%);
+}
+.style .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+.style .elements {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+button {
+  font: inherit;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  border-color: transparent;
+}
+
+.buttons button {
+  background-color: #FEB692;
+  margin-bottom: 5px;
+}
+.buttons button:hover {
+  background: #EA5455;
+}
+.buttons button.default {
+  background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  transition: all 500ms ease;
+  margin-right: 5px;
+  color: white;
+}
+.buttons button.default:hover {
+  background-image: linear-gradient(-20deg, #b721ff 50%, #21d4fd 100%);
+}
+.buttons button.rounded {
+  background-color: #EA5455;
+  border-radius: 20px;
+  color: white;
+}
+
+div[role=checkbox] {
+  margin-inline: auto;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+}
+div[role=checkbox]::after {
+  content: "";
+  display: block;
+  border-radius: inherit;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+div[role=checkbox].checked::after {
+  display: none;
+}
+
+input {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  outline: none;
+  position: relative;
+  background: white;
+  width: 100%;
+}
+input:focus {
+  border-color: #777;
+}
+
+ul {
+  list-style-type: none;
+  margin-inline: auto;
+  border: 1px solid #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+ul li:not(:first-child) {
+  display: none;
+}
+ul li {
+  position: relative;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  text-align: center !important;
+}
+ul li .fas {
+  position: absolute;
+  right: 1rem;
+  padding: 4px;
+}
+ul li:first-child {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+ul li:first-child::after {
+  content: "";
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 1rem;
+}
+ul li:not(:first-child):hover {
+  background: #f2f2f2;
+}
+
+.display li {
+  display: block;
+}
+.display li:not(:first-child) {
+  display: inline-block;
+  width: 100%;
+}
+
+.video-container, .img-container {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  position: relative;
+  text-align: right;
+}
+.video-container .video-wrapper, .video-container .img-wrapper, .img-container .video-wrapper, .img-container .img-wrapper {
+  width: 6rem;
+  height: 6rem;
+  flex-grow: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.video-container .video-wrapper video, .video-container .video-wrapper img, .video-container .img-wrapper video, .video-container .img-wrapper img, .img-container .video-wrapper video, .img-container .video-wrapper img, .img-container .img-wrapper video, .img-container .img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.video-container .video-wrapper, .img-container .video-wrapper {
+  height: calc(12rem + 5px);
+}
+.video-container .details, .img-container .details {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+}
+
+@media only screen and (max-width: 786px) {
+  header nav .right {
+    display: none;
+  }
+  header nav #time {
+    display: none;
+  }
+  header nav .settings {
+    position: static;
+    padding-left: 2rem;
+  }
+  header nav .settings .colors {
+    display: flex !important;
+    box-shadow: none !important;
+  }
+  header nav .settings .fas {
+    display: none;
+  }
+
+  section {
+    border: none;
+  }
+  section .line {
+    display: none;
+  }
+
+  footer {
+    padding-inline: 3rem;
+    padding-bottom: 0;
+  }
+}
+footer {
+  display: flex;
+  padding-block: 1rem;
+  margin-top: 3rem;
+  align-items: center;
+}
+footer .social-links {
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: -1rem;
+  letter-spacing: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-position: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: all 500ms ease;
+  margin-top: 0.5rem;
+}
+
+header, section, footer {
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#author {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.wallpaper header, .wallpaper nav, .wallpaper footer {
+  color: white;
+}
+.wallpaper .input-field .fas {
+  color: black;
+}
+
+.blur .section {
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+.blur .section .style {
+  border-color: #EEE;
+}
+.blur .section #checkbox, .blur .section ul {
+  border-color: white !important;
+}
+
+.fas {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
